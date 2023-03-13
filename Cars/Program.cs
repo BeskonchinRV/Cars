@@ -1,12 +1,12 @@
-﻿using System;
+using Cars;
+using System.ComponentModel.Design;
 
-namespace Cars
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+Car machina = new Car("Red");
+
+int num = 0;
+while (num != 4)
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
+    Menu.CarMenu( ref num);
 }
